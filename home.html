@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- tailwind css cnd -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui cnd -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font add  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body class="bg-[#f5f5f5]" style=" font-family: 'Outfit', sans-serif ">
+
+
+    <section class="bg-white rounded-3xl pb-16">
+
+
+        <section class=" flex justify-between w-[90vw] m-auto items-center pt-8 ">
+            <div>
+                <h1 class="font-extrabold text-4xl ">$2321</h1>
+                <p class="text-[#08080881]">Available Balance</p>
+            </div>
+            <button class="btn ">
+                <i class="fa-regular fa-circle-left"></i>
+                Log Out
+            </button>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- new section start here -->
+        <section>
+            <div class="w-[90vw] m-auto">
+                <h1 class="font-extrabold text-2xl">🔥 Welcome to RHS Bank..!</h1>
+                <p class="text-[#08080871]">Enjoy easy and convenient financial services with us. Cashout charge is low
+                    and
+                </p>
+            </div>
+
+
+            <div class="flex w-[90vw] m-auto items-center gap-4 mt-8">
+                <div class=" rounded-lg py-5 shadow-lg  border">
+                    <img class="w-[40%] mb-2  m-auto" src="./asset/add-removebg-preview.png" alt="">
+                    <p class="text-center text-[#080808ae]">Add Money</p>
+                </div>
+
+                <div class=" rounded-lg py-5 shadow-lg border">
+                    <img class="w-[40%] mb-2  m-auto" src="./asset/out-removebg-preview.png" alt="">
+                    <p class="text-center text-[#080808ae]">Cashout</p>
+                </div>
+                <div class=" rounded-lg py-5 shadow-lg border">
+                    <img class="w-[40%] mb-2  m-auto" src="./asset/download-removebg-preview.png" alt="">
+                    <p class="text-center text-[#080808ae]">Transactions</p>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+
+
+    <!-- add money section -->
+
+
+
+    <section>
+        <h1 class="text-2xl font-semibold w-[90vw] m-auto mt-12">Add Money</h1>
+        <div class=" bg-white w-[90vw] m-auto  rounded-lg p-5 mt-4">
+            <h1 class="text-lg ">Amount to Add</h1>
+            <label class="input input-bordered flex items-center gap-2 rounded-[50px]">
+                <input id="phone-input" type="text" class="grow " placeholder="Add Amount to withdraw" />
+            </label>
+            <h1 class="mt-4 text-xl ">4 Digit Pin</h1>
+            <label class=" rounded-[50px] input input-bordered flex items-center gap-2">
+                <input id="pin-input" type="password" class="grow" value="" placeholder="Enter 4 Digit Pin" />
+            </label>
+
+            <button id="login-btn" class="btn btn-wide w-full mt-10 bg-[#0874F2] border-none text-xl text-white">Add
+                Money</button>
+        </div>
+    </section>
+
+
+    <!-- cash out section -->
+
+    <section class="hidden">
+        <h1 class="text-2xl font-semibold w-[90vw] m-auto mt-12">Cash Out</h1>
+        <div class=" bg-white w-[90vw] m-auto  rounded-lg p-5 mt-4">
+            <h1 class="text-lg ">Cash Out amount</h1>
+            <label class="input input-bordered flex items-center gap-2 rounded-[50px]">
+                <input id="phone-input" type="text" class="grow " placeholder="Add Amount to withdraw" />
+            </label>
+            <h1 class="mt-4 text-xl ">4 Digit Pin</h1>
+            <label class=" rounded-[50px] input input-bordered flex items-center gap-2">
+                <input id="pin-input" type="password" class="grow" value="" placeholder="Enter 4 Digit Pin" />
+            </label>
+
+            <button id="login-btn" class="btn btn-wide w-full mt-10 bg-[#0874F2] border-none text-xl text-white">Withdraw Money</button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

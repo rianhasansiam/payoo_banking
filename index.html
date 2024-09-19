@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+    <!-- tailwind css cnd -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui cnd -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font add  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+
+                    fontFamily: {
+                        Outfit: ['Outfit', 'sans-serif'],
+                    },
+
+
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-Outfit bg-[#ededed] h-[100vh]">
+
+
+
+    <h1 class="font-extrabold text-5xl w-[90vw] m-auto text-center text-[#0874F2] pt-[35%]">RHS BANK</h1>
+    <hr class="h-0.5 w-[85vw] m-auto  bg-[#000000] mt-1">
+
+    <section class="w-[90vw] m-auto  rounded-lg p-5 bg-[#ffffff] mt-10">
+
+
+        <h1 class="text-xl font-bold">Mobile Number</h1>
+          <label class="input input-bordered flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <input id="phone-input" type="text" class="grow" placeholder="Enter your number" />
+          </label>
+
+
+          <h1 class="mt-4 text-xl font-bold">4 Digit Pin</h1>
+
+          <label class="input input-bordered flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 opacity-70">
+              <path
+                fill-rule="evenodd"
+                d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
+                clip-rule="evenodd" />
+            </svg>
+            <input id="pin-input" type="password" class="grow" value="" placeholder="Enter 4 Digit Pin" />
+          </label>
+
+
+          <button id="login-btn" class="btn btn-wide w-full mt-10 bg-[#0874F2] border-none text-xl text-white">Login</button>
+
+
+
+    </section>
+<script src="./script.js"></script>    
+</body>
+</html>

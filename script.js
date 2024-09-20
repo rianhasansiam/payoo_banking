@@ -1,8 +1,4 @@
-// console.log()
-
-
-
-document.getElementById('login-btn').addEventListener('click',function(){
+document.getElementById('login-btn').addEventListener('click',function() {
 
     const phoneInput=document.getElementById('phone-input').value;
 
@@ -10,7 +6,7 @@ document.getElementById('login-btn').addEventListener('click',function(){
 
     if(phoneInput=="01932600504"  && pinInputt=="0193"){
 
-        // window.location.href="./home.html";
+        window.location.href="./home.html";
 
     }
     else{
